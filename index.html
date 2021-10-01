@@ -5,7 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Omnifood — Never cook again!</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="media-queries.css" />
   </head>
   <body>
     <div class="navbardiv">
@@ -22,7 +29,7 @@
           <li class="navlist3">Meals</li>
           <li class="navlist4">Testimonials</li>
           <li class="navlist5">Pricing</li>
-          <li class="navlist6 btn">Try for free</li>
+          <li class="navlist6"><a class="btn">Try for free</a></li>
         </ol>
       </nav>
     </div>
@@ -568,129 +575,138 @@
       </div>
     </section>
 
-    <section class="meal-form">
-      <div class="form-container">
-        <h2 class="form-head">Get your first meal for free!</h2>
-        <p class="form-content">
-          Healthy, tasty and hassle-free meals are waiting for you. Start eating
-          well today. You can cancel or pause anytime. And the first meal is on
-          us!
-        </p>
-        <form action="" class="input-form">
-          <div>
-            <label for="full-name">Full Name</label>
-            <input
-              id="full-name"
-              type="text"
-              class="full-name input-element"
-              placeholder="John Smith"
-              required
-            />
+    <section class="meal-form-section">
+      <div class="meal-form-div">
+        <div class="meal-form">
+          <div class="form-container">
+            <h2 class="form-head">Get your first meal for free!</h2>
+            <p class="form-content">
+              Healthy, tasty and hassle-free meals are waiting for you. Start
+              eating well today. You can cancel or pause anytime. And the first
+              meal is on us!
+            </p>
+            <form action="" class="input-form">
+              <div>
+                <label for="full-name">Full Name</label>
+                <input
+                  id="full-name"
+                  type="text"
+                  class="full-name input-element"
+                  placeholder="John Smith"
+                  required
+                />
+              </div>
+
+              <div>
+                <label for="email">Email Address</label>
+
+                <input
+                  id="email"
+                  type="email"
+                  class="email input-element"
+                  placeholder="me@example.com"
+                  required
+                />
+              </div>
+
+              <div>
+                <label for="option">Where did you hear from us?</label>
+                <select name="options" id="option" class="option input-element">
+                  <option value="default">Please choose one option:</option>
+                  <option value="friends and family">Friends and family</option>
+                  <option value="youtube">YouTube video</option>
+                  <option value="podcast">Podcast</option>
+                  <option value="facebook ad">Facebook ad</option>
+                  <option value="others">Others</option>
+                </select>
+              </div>
+
+              <input
+                type="submit"
+                class="submit-btn input-element"
+                value="Sign up now"
+              />
+            </form>
           </div>
-
-          <div>
-            <label for="email">Email Address</label>
-
-            <input
-              id="email"
-              type="email"
-              class="email input-element"
-              placeholder="me@example.com"
-              required
-            />
-          </div>
-
-          <div>
-            <label for="option">Where did you hear from us?</label>
-            <select name="options" id="option" class="option input-element">
-              <option value="default">Please choose one option:</option>
-              <option value="friends and family">Friends and family</option>
-              <option value="youtube">YouTube video</option>
-              <option value="podcast">Podcast</option>
-              <option value="facebook ad">Facebook ad</option>
-              <option value="others">Others</option>
-            </select>
-          </div>
-
-          <input
-            type="submit"
-            class="submit-btn input-element"
-            value="Sign up now"
-          />
-        </form>
+          <img src="img/eating.jpg" alt="Woman Eating" class="meal-form-img" />
+        </div>
       </div>
-      <img src="img/eating.jpg" alt="Woman Eating" class="meal-form-img" />
     </section>
 
     <div class="line-break">
       <br />
     </div>
     <footer class="footer-section">
-      <div class="footer-col-1">
-        <div class="footer-logo-div">
-          <img
-            src="img/omnifood-logo.png"
-            alt="Company Logo"
-            class="footer-icon"
-          />
+      <div class="footer-div">
+        <div class="footer-col-1">
+          <div class="footer-logo-div">
+            <img
+              src="img/omnifood-logo.png"
+              alt="Company Logo"
+              class="footer-icon"
+            />
+          </div>
+          <div class="social-media-logos">
+            <ul class="social-logo-list">
+              <li class="social-logo">
+                <ion-icon
+                  class="social-logo-item"
+                  name="logo-instagram"
+                ></ion-icon>
+              </li>
+              <li class="social-logo">
+                <ion-icon
+                  class="social-logo-item"
+                  name="logo-facebook"
+                ></ion-icon>
+              </li>
+              <li class="social-logo">
+                <ion-icon
+                  class="social-logo-item"
+                  name="logo-twitter"
+                ></ion-icon>
+              </li>
+            </ul>
+          </div>
+          <p class="copyright-para">
+            Copyright © 2021 by Omnifood, Inc. All rights reserved.
+          </p>
         </div>
-        <div class="social-media-logos">
-          <ul class="social-logo-list">
-            <li class="social-logo">
-              <ion-icon
-                class="social-logo-item"
-                name="logo-instagram"
-              ></ion-icon>
-            </li>
-            <li class="social-logo">
-              <ion-icon
-                class="social-logo-item"
-                name="logo-facebook"
-              ></ion-icon>
-            </li>
-            <li class="social-logo">
-              <ion-icon class="social-logo-item" name="logo-twitter"></ion-icon>
-            </li>
+        <div class="footer-col-2">
+          <h2 class="footer-head-1">Contact us</h2>
+          <p class="footer-col2-1">
+            623 Harrison St., 2nd Floor, San Francisco, CA 94107
+          </p>
+          <p class="footer-col2-2">
+            <span>415-201-6370</span> hello@omnifood.com
+          </p>
+        </div>
+        <div class="footer-col-3 foot-col-list">
+          <h2 class="footer-head-0">Account</h2>
+          <ul class="footer-list-0">
+            <li class="footer-list-item">Create Account</li>
+            <li class="footer-list-item">Sign in</li>
+            <li class="footer-list-item">iOS App</li>
+            <li class="footer-list-item">Android app</li>
           </ul>
         </div>
-        <p class="copyright-para">
-          Copyright © 2021 by Omnifood, Inc. All rights reserved.
-        </p>
-      </div>
-      <div class="footer-col-2">
-        <h2 class="footer-head-1">Contact us</h2>
-        <p class="footer-col2-1">
-          623 Harrison St., 2nd Floor, San Francisco, CA 94107
-        </p>
-        <p class="footer-col2-2">
-          <span>415-201-6370</span> hello@omnifood.com
-        </p>
-      </div>
-      <div class="footer-col-3 foot-col-list">
-        <h2 class="footer-head-0">Account</h2>
-        <ul class="footer-list-0">
-          <li class="footer-list-item">Create Account</li>
-          <li class="footer-list-item">Sign in</li>
-          <li class="footer-list-item">iOS App</li>
-          <li class="footer-list-item">Android app</li>
-        </ul>
-      </div>
-      <div class="footer-col-4 foot-col-list">
-        <h2 class="footer-head-0">Company</h2>
-        <ul class="footer-list-0">
-          <li class="footer-list-item">About Omnifood</li>
-          <li class="footer-list-item">For Business</li>
-          <li class="footer-list-item">Cooking partners</li>
-          <li class="footer-list-item">Careers</li>
-        </ul>
-      </div>
-      <div class="footer-col-5 foot-col-list">
-        <h2 class="footer-head-0">Resources</h2>
-        <ul class="footer-list-0">
-          <li class="footer-list-item">Recipe directory</li>
-          <li class="footer-list-item">Help center</li>
-          <li class="footer-list-item">Privacy & terms</li>
-        </ul>
+        <div class="footer-col-4 foot-col-list">
+          <h2 class="footer-head-0">Company</h2>
+          <ul class="footer-list-0">
+            <li class="footer-list-item">About Omnifood</li>
+            <li class="footer-list-item">For Business</li>
+            <li class="footer-list-item">Cooking partners</li>
+            <li class="footer-list-item">Careers</li>
+          </ul>
+        </div>
+        <div class="footer-col-5 foot-col-list">
+          <h2 class="footer-head-0">Resources</h2>
+          <ul class="footer-list-0">
+            <li class="footer-list-item">Recipe directory</li>
+            <li class="footer-list-item">Help center</li>
+            <li class="footer-list-item">Privacy & terms</li>
+          </ul>
+        </div>
       </div>
     </footer>
     <script

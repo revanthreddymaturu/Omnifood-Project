@@ -1,0 +1,121 @@
+@media screen and (max-width: 74em) {
+  html {
+    font-size: 50%;
+  }
+  .meal-form-img {
+    height: 100%;
+  }
+}
+
+@media screen and (max-width: 60em) {
+  html {
+    font-size: 35%;
+  }
+  .testimonials {
+    grid-template-columns: 1fr;
+  }
+  .testimon-col2 {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  .test-review-content {
+    font-size: 3rem;
+  }
+  .test-by {
+    font-size: 2rem;
+  }
+  .testimon-reviews {
+    gap: 12rem;
+  }
+}
+@media screen and (max-width: 45em) {
+  html {
+    font-size: 35%;
+  }
+
+  .navlist2,
+  .navlist3,
+  .navlist4,
+  .navlist5 {
+    visibility: hidden;
+  }
+
+  .testimon-col2 {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .testimon-reviews {
+    gap: 12rem;
+  }
+}
+
+@media screen and (max-width: 35em) {
+  .layout1 {
+    grid-template-columns: 1fr;
+  }
+  .del-img {
+    max-width: 5rem;
+  }
+  .delivered-content-para {
+    font-size: 2rem;
+  }
+  .press-content {
+    font-size: 2rem;
+  }
+  .press-img {
+    height: 2.5rem;
+  }
+  .price-card-container {
+    grid-template-columns: 1fr;
+    max-width: 40rem;
+  }
+  .testimon-reviews {
+    gap: 12rem;
+  }
+  .testimon-col2 {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .test-review-content {
+    font-size: 2rem;
+  }
+  .test-by {
+    font-size: 1.5rem;
+  }
+  .meals-card-container {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+  .meals-card {
+    width: 40rem;
+  }
+}
+
+@media screen and (max-width: 28em) {
+  .navlist6 {
+    visibility: hidden;
+  }
+  .footer-div {
+    grid-template-columns: 1fr 1fr;
+    justify-items: normal;
+  }
+  .press-img {
+    height: 1.7rem;
+  }
+  .meal-form {
+    grid-template-columns: 1fr;
+  }
+  .special {
+    grid-template-columns: 1fr;
+    gap: 5rem;
+  }
+}
+
+@media screen and (max-width: 19em) {
+  .test-review-content {
+    font-size: 1.5rem;
+  }
+  .testimon-col2 {
+    grid-template-columns: 1fr 1fr;
+  }
+  .testimon-img {
+    width: 75%;
+  }
+}
